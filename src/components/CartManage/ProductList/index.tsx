@@ -1,6 +1,6 @@
-import { useCartStore } from "../../store/cart-store";
+import { useCartStore } from "../../../store/cart-store";
 
-const ProductList = ({ products, setCart }: any) => {
+const ProductList = ({ products }: any) => {
   const addToCart = useCartStore((state) => state.addToCart);
   return (
     <div>
@@ -8,7 +8,7 @@ const ProductList = ({ products, setCart }: any) => {
         return (
           <div key={index}>
             <h3>{product.name}</h3>
-            <h3>{product.description}</h3>
+            <p>{product.description}</p>
             <button onClick={() => addToCart(product)}>Add to card</button>
           </div>
         );
