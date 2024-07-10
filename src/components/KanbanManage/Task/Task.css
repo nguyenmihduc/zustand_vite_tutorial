@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: space-between ;
     margin-bottom: 0.5rem;
+    cursor: move;
 }
 
 .bottomWrapper {
@@ -20,6 +21,10 @@
     font-size: small;
     padding: 0.25rem;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .PLANNED {
@@ -32,4 +37,8 @@
 
 .DONE {
     background: var(--COLOR-DONE);
+}
+
+.task img {
+    cursor: pointer;
 }
